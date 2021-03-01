@@ -1,4 +1,4 @@
-{% set version = '0.3.3' %}
+{% set version = "0.3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/RPushbullet_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/RPushbullet/RPushbullet_{{ version }}.tar.gz
-  sha256: becfa9bad0ad358e4fea39bc0c2397001ab6ef79d9dd28abf44606d64b6d9e29
+  sha256: 3112969718008d9f686b1f0219716061e3fa4b31f6b7a28751c098bee118a4d7
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,13 +40,10 @@ test:
 about:
   home: https://CRAN.R-project.org/package=RPushbullet
   license: GPL-2
-  summary: An R interface to the Pushbullet messaging service which provides fast and efficient
-    notifications (and file transfer) between computers, phones and tablets.  An account
-    has to be registered at the site <http://www.pushbullet.com> site to obtain a (free)
-    API key.
+  summary: An R interface to the Pushbullet messaging service which provides fast and efficient notifications (and file transfer) between computers, phones and tablets.  An account has to be registered at the site <http://www.pushbullet.com> site to obtain a (free) API key.
   license_family: GPL2
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
