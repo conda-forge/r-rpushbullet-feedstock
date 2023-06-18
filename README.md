@@ -1,11 +1,11 @@
-About r-rpushbullet
-===================
+About r-rpushbullet-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rpushbullet-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=RPushbullet
 
 Package license: GPL-2
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rpushbullet-feedstock/blob/main/LICENSE.txt)
 
 Summary: An R interface to the Pushbullet messaging service which provides fast and efficient notifications (and file transfer) between computers, phones and tablets.  An account has to be registered at the site <http://www.pushbullet.com> site to obtain a (free) API key.
 
